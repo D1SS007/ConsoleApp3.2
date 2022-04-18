@@ -7,6 +7,7 @@ namespace ConsoleApp3._2
         static void Main(string[] args)
         {
             Random random = new Random();
+            
             int rows = 10;
             int columns = 10;
             int minNumber = 1;
@@ -20,12 +21,13 @@ namespace ConsoleApp3._2
                 {
                     array [i,j] = random.Next(minNumber, maxNumber);
                     Console.Write(array [i,j] + " ");
+                    
                     if(maxElement < array[i, j])
                     {
                         maxElement = array [i,j];
                     }
                 }
-
+                
                 Console.WriteLine ();
             }
 
